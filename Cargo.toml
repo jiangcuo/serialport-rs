@@ -16,7 +16,7 @@ categories = ["hardware-support"]
 
 [target."cfg(unix)".dependencies]
 bitflags = "2.4.0"
-nix = { git = "https://github.com/jiangcuo/nix.git", rev = "fb787ef97be7df1b5ef3612ab6179a625d6b6c86" , default-features = false, features = ["fs", "ioctl", "poll", "signal", "term"] }
+nix = { git = "https://github.com/jiangcuo/nix.git", rev = "922efd3f8e5149cd61767ec813b9d1030c95b7f5" , default-features = false, features = ["fs", "ioctl", "poll", "signal", "term"] }
 
 [target.'cfg(all(target_os = "linux", not(target_env = "musl")))'.dependencies]
 libudev = { version = "0.3.0", optional = true }
